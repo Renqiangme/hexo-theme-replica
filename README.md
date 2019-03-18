@@ -1,7 +1,7 @@
 # Replica [![LICENSE MIT](https://img.shields.io/badge/LICENSE-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 Github style replication for hexo theme. 
 
-I updated some UI from this theme.
+I updated some UI from this theme, You can view this demo: [Click the link](http://renqiang.xyz).
 
 ## Setup
 #### Install
@@ -133,7 +133,9 @@ Google Custom Search Engine[^1]
 
 ## License
 The MIT License[^2]
+
 Copyright (c) 2018 Renqiang <renqiangme@qq.com>
+
 Copyright (c) 2015-2018 Hiitea <luohaojing@gmail.com>
 
 [^1]: https://cse.google.com/
