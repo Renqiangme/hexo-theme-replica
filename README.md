@@ -1,22 +1,12 @@
 # Replica [![LICENSE MIT](https://img.shields.io/badge/LICENSE-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 Github style replication for hexo theme. 
 
-Just in case you are working in the office but suddenly have some genius ideas. :two_hearts:  
-[Click here to view the demo site](//sabrinaluo.github.io/tech)
-
-Issues & Contributions are welcome! :stuck_out_tongue:
-
-## Version
-#### v1.0  
-Github UI before 2017, which uses the grey navbar
-
-#### v2.0 (in progress)  
-Github UI in 2017, which uses the black navbar
+I updated some UI from this theme.
 
 ## Setup
 #### Install
 ```
-git clone git@github.com:sabrinaluo/hexo-theme-replica.git themes/replica
+git clone https://github.com/Renqiangme/hexo-theme-replica.git themes/replica
 ```
 
 #### Configure
@@ -143,15 +133,9 @@ Google Custom Search Engine[^1]
 
 ## License
 The MIT License[^2]
-
+Copyright (c) 2018 Renqiang <renqiangme@qq.com>
 Copyright (c) 2015-2018 Hiitea <luohaojing@gmail.com>
 
 [^1]: https://cse.google.com/
 [^2]: https://opensource.org/licenses/MIT
 
-## Buy me coffee :yum:
-BTC: 19U6USzi7WaFmY3DTkgn67EzYpTqZPNwRG  
-![image](https://user-images.githubusercontent.com/5300359/30433338-cb7a9e48-9996-11e7-8e17-55f582b56e48.png)
-
-Alipay:  
-[![Alipay](http://7xow88.com1.z0.glb.clouddn.com/alip.jpg?imageView2/3/w/150/)](http://7xow88.com1.z0.glb.clouddn.com/alip.jpg)
