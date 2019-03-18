@@ -9,6 +9,9 @@
       <% if(page.title === 'tags'){ %>
       <%- list_tags() %>
       <% } %>
+      <% if(page.title === 'About'){ %>
+      <%- page.content %>
+      <% } %>
       <% if(page.title === 'categories'){ %>
       <%- list_categories() %>
       <% } %>

@@ -7,6 +7,7 @@ var linkedin = config.social.linkedin || theme.social.linkedin;
 var location = config.location || theme.location;
 var url = config.url;
 var flagcounter_url = config.flagcounter_url;
+var currentYear = date(Date.now(), 'YYYY');
 %>
 <div class="footer-wrapper container">
   <footer class="footer clearfix">
@@ -15,7 +16,7 @@ var flagcounter_url = config.flagcounter_url;
       <i class="fa fa-github"></i>
     </a>
     <ul class="footer-social-link">
-      <li>© 2018 <%= config.author %></li>
+      <li>© 2016 - <%= currentYear %> <%= config.author %></li>
       <li><a href="<%= url %>">Home</a></li>
       <% if(github){ %>
       <li><a href="<%= github %>">Github</a></li>
@@ -26,8 +27,7 @@ var flagcounter_url = config.flagcounter_url;
       <% } %>
     </ul>
     <div class="footer-theme-info">
-      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
-      by <a href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+      Powered by <a href="https://hexo.io">Hexo</a>,Theme <a href="https://github.com/Renqiangme/hexo-theme-replica">Replica</a>
     </div>
     </div>
     <% if(flagcounter_url){ %>
