@@ -1,19 +1,31 @@
 <%
 var publishTimestamp = page.date.valueOf();
+var category;
+page.categories.forEach(function(cat, index) {
+    if (index === 0) {
+        category = cat
+    }
+})
 %>
 <div class="post-container container">
-  <h3>
-    <i class="fa fa-user-o"></i>
-    <%= config.author || '' %>
-
-    <span class="post-date float-right" title="{{moment(<%= publishTimestamp %>).format('MMM DD, YYYY, h:mm:ss A')}}">
-      <i class="fa fa-pencil-square-o"></i>
-      {{moment(<%= publishTimestamp %>).fromNow()}}
-    </span>
-  </h3>
-
+  <div class="post-head">
+     <h1 class="post-head-title"><%= page.title || 'Untitle' %></h1>
+     <p class="post-head-info">
+         <span class="post-head-date" title="{{moment(<%= publishTimestamp %>).format('MMM DD, YYYY, h:mm:ss A')}}">
+              <i class="fa fa-calendar"></i>&nbsp;{{moment(<%= publishTimestamp %>).format('MMM DD, YYYY, h:mm')}}
+         </span>
+         <span class="post-head-categories">
+             &nbsp;&nbsp;<i class="fa fa-folder-open"></i>&nbsp;<a href="<%= url_for(category.path) %>"><%= category.name %></a>
+         </span>
+         <span class="post-head-tags">
+             &nbsp;&nbsp;<i class="fa fa-tag"></i>&nbsp;
+             <% page.tags.forEach(function(tag){ %>
+             <a href="<%= url_for(tag.path) %>"><%= tag.name %></a>
+             <% }) %>
+         </span>
+     </p>
+  </div>
   <article class="post-content">
-    <h1><%= page.title || 'Untitle' %></h1>
     <%- page.content %>
   </article>
 </div>
